@@ -1,86 +1,184 @@
-*{
-	margin: 0px;
-	padding: 0px;
+#wrapper {/*background-image:url(_bg.png);*/
 }
-
-.s3_1 {
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn {
+from {
+opacity:0;
+}
+to {
+	opacity: 1;
+}
+}
+@-moz-keyframes fadeIn {
+from {
+opacity:0;
+}
+to {
+	opacity: 1;
+}
+}
+@keyframes fadeIn {
+from {
+opacity:0;
+}
+to {
+	opacity: 1;
+}
+}
+ @-webkit-keyframes growUp {
+from {
+opacity:0.4;
+opacity:0;
+}
+to {
+	width: 100%;
+	opacity: 1;
+}
+}
+@-moz-keyframes growUp {
+from {
+opacity:0.4;
+ width:0;
+}
+to {
+	width: 100%;
+	opacity: 1;
+}
+}
+@keyframes growUp {
+from {
+width:0;
+opacity:0.4;
+}
+to {
+	width: 100%;
+	opacity: 1;
+}
+}
+.grow-up {
+	-webkit-animation: growUp ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation: growUp ease-in 2;
+	animation: growUp ease-in 1;
+	-webkit-animation-fill-mode: forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (height: 100%)*/
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-duration: 2.5s;
+	-moz-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	animation-delay: 0.5s
+}
+.grow-up.one {
+	-webkit-animation-delay: 1.2s;
+	-moz-animation-delay: 1.2s;
+	animation-delay: 1.2s;
+}
+.fade-in {
+	opacity: 0;  /* make things invisible upon start */
+	-webkit-animation: fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+	-webkit-animation-fill-mode: forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+}
+.fade-in.one {
+	-webkit-animation-delay: 0.8s;
+	-moz-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+}
+.fade-in.two {
+	-webkit-animation-delay: 1.8s;
+	-moz-animation-delay: 1.8s;
+	animation-delay: 1.8s;
+}
+.fade-in.three {
+	-webkit-animation-delay:3s;
+	-moz-animation-delay: 3s;
+	animation-delay: 3s;
+}
+.hand {
+	border: 0px solid #333;
 	position: absolute;
-	width: 1024px;
+	top: 285px;
+	right: 0;
+	width: 0;
+	max-width: 495px;
+}
+.design {
+	position: center;
 	height: 768px;
-	z-index: 1;
-}
-
-.s3_2 {
+	left: 0px;
 	position: absolute;
-	left: 97px;
-	top: 299px;
-	animation: fadeInLeft 1s;
-	animation-delay: 0.5s;
-	animation-fill-mode: both;
-	z-index: 2;
+	top: 0;
+	width: 1024px;
 }
 
-.s3_3 {
+
+/*
+.txt1 {position: absolute;top:307px;left: 164px;}
+.txt2 {position: absolute;top: 443px;left: 164px;}
+.product {position: absolute;top: 162px;left: 833px;}
+*/
+
+.s3_move1 {
+	position: absolute!important;
+    top: 54px!important;
+    left: 18%!important;
+    width: 60%!important;
+}
+
+.s3_move2 {
+	position: absolute!important;
+    top: 31px!important;
+    left: 74%!important;
+    width: 23%!important;
+}
+
+.s3_move3 {
+	position: absolute!important;
+    top: 420px!important;
+    left: 8%!important;
+    width: 40%!important;
+}
+.s3_move3txt {
 	position: absolute;
-	left: 664px;
-	top: 299px;
-	animation: fadeInRight 1s;
-	animation-delay: 1.5s;
-	animation-fill-mode: both;
-	z-index: 3;
+	top: 420px!important;
+	left: 52%!important;
+	width: 40%!important;
 }
 
-.s3_4 {
+.s3_move4 {
 	position: absolute;
-	left: 375px;
-	top: 380px;
-	animation: zoomInDown 1s;
-	animation-delay: 2s;
-	animation-fill-mode: both;
-	z-index: 4;
+	top: 420px!important;
+	left: 46%!important;
+	width: 40%!important;
 }
 
-.s3_5 {
+.s3_move4txt {
 	position: absolute;
-	left: 808px;
-	top: 58px;
-	animation: stampIn 0.3s;
-	animation-delay: 3.5s;
-	animation-fill-mode: both;
-	z-index: 5;
+	top: 603px;
+	left: 46%!important;
 }
 
-@-webkit-keyframes stampIn {
-	0% {
-		opacity: 0;
-	}
-	10% {
-		transform-origin: 50% 50%;
-		transform: rotate(-40deg) scale(3);
-		opacity: 0.5;
-	}
-	100% {
-		transform: rotate(0deg) scale(1);
-		opacity: 1;
-	}
+.s3_move5 {
+	position: absolute;
+	top: 414px;
+	left: 70%!important;
 }
 
-@keyframes stampIn {
-	0% {
-		opacity: 0;
-	}
-	10% {
-		transform-origin: 50% 50%;
-		transform: rotate(-30deg) scale(2);
-		opacity: 0.5;
-	}
-	100% {
-		transform: rotate(0deg) scale(1);
-		opacity: 1;
-	}
+.s3_move5txt {
+	position: absolute;
+	top: 608px;
+	left: 70%!important;
 }
 
-.stampIn {
-  -webkit-animation-name: stampIn;
-  animation-name: stampIn;
+.s3_move6 {
+	position: absolute;
+	top: 690px;
+	left: 29%!important;
 }
