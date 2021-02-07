@@ -469,7 +469,7 @@ function checkClickThrough(){
 	//document.getElementById("click_through").innerHTML=''; //Blocking this line allows common overlay
 
 	if(currentslide == 1){
-	document.getElementById("click_through").innerHTML='<button class="button1" onclick="checkBtns(1)"></button><button class="button2" onclick="checkBtns(2)"></button><button class="button3" onclick="checkBtns(3)"></button><button class="button4" onclick="checkBtns(4)"></button><button class="button5" onclick="checkBtns(5)"></button><div class="button6" onclick="checkBtns(6)"><img src="slide1/2.png" width="60" height="60" alt=""></div>';
+	document.getElementById("click_through").innerHTML='<button class="button1" onclick="checkBtns(1)"></button><button class="button2" onclick="checkBtns(2)"></button><button class="button3" onclick="checkBtns(3)"></button><button class="button4" onclick="checkBtns(4)"></button><button class="button5" onclick="checkBtns(5)"></button><div class="button6" onclick="checkBtns(6)"><img src="slide1/2.png" alt=""></div>';
 	}
 }
 
