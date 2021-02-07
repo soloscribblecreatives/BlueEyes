@@ -110,7 +110,7 @@ html[xmlns] .clearfix {
 	top: 380px;
 	opacity: .8;
 	display: block;
-	z-index: 999;
+	z-index: -1;
 	visibility: visible;
 }
 .left_arrow {
