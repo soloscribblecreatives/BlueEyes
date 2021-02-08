@@ -271,8 +271,8 @@ if(direction == 'b') {
 //custom slide changes ends here....
 
 	else{
-	if(page_id >= 0){
-		page_id = page_id;
+	if(page_id == 1){
+		page_id = page_id - 1;
 		//alert(page_id);
 		//console.log(page_id);
 		if(page_id == 0){
@@ -302,8 +302,8 @@ if(direction == 'b') {
 //custom slide changes ends here....
 
 	else{
-	if(page_id <= 6){
-		page_id = page_id;
+	if(page_id == 6){
+		page_id = page_id + 1;
 		//alert(page_id);
 		if(page_id == 7){
             flag=1;
