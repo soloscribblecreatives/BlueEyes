@@ -10,10 +10,15 @@
   z-index: 1;
 }
 
+.s1_2_wrap {
+  position: absolute;
+  top: -15px;
+}
+
 .s1_2 {
   position: absolute;
-  left: 220px;
-  top: 27px;
+  left: 204px;
+  top: 39px;
   width: 602px;
   height: 243px;
   animation: fadeIn 0.1s;
@@ -24,42 +29,24 @@
 
 .s1_3 {
   position: absolute;
-  left: 838px;
-  top: 196px;
-  width: 153px;
-  height: 177px;
-  z-index: 3;
-}
-
-.s1_4 {
-  position: absolute;
-  left: 176px;
-  top: 346px;
-  width: 673px;
-  height: 371px;
-  z-index: 4;
-}
-
-.s1_5 {
-  position: absolute;
   left: 239px;
   top: 94px;
   width: 316px;
   height: 127px;
-    animation: fadeInLeft 0.5s;
+  animation: fadeInLeft 0.5s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
   z-index: 5;
 }
 
-.s1_6 {
+.s1_4 {
 
   position: absolute;
   left: 252px;
   top: 94px;
   width: 538px;
   height: 126px;
-    animation: fadeInRight 0.5s;
+  animation: fadeInRight 0.5s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
   z-index: 6;
