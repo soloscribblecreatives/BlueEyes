@@ -110,7 +110,7 @@ html[xmlns] .clearfix {
 	top: 380px;
 	opacity: .8;
 	display: block;
-	z-index: -1;
+	z-index: 999;
 	visibility: visible;
 }
 .left_arrow {
@@ -236,69 +236,4 @@ html[xmlns] .clearfix {
 	border: 1px solid red;
 	background-color: rgba(0,0,0,0.5);
 	color: #ffffff;
-}
-
-.button1 {
-	position:absolute;
-	width: 200px;
-	height: 65px;
-	left: 111px;
-	bottom: 0px;
-	opacity: 0;
-	border-radius: 0px 50px 0px 0px;
-	z-index: 999;
-}
-
-.button2 {
-	position:absolute;
-	width: 150px;
-	height: 65px;
-	left: 315px;
-	bottom: 0px;
-	opacity: 0;
-	border-radius: 0px 50px 0px 0px;
-	z-index: 999;
-}
-
-.button3 {
-	position:absolute;
-	width: 150px;
-	height: 65px;
-	left: 467px;
-	bottom: 0px;
-	opacity: 0;
-	border-radius: 0px 50px 0px 0px;
-	z-index: 999;
-}
-
-.button4 {
-	position:absolute;
-	width: 150px;
-	height: 65px;
-	left: 619px;
-	bottom: 0px;
-	opacity: 0;
-	border-radius: 0px 50px 0px 0px;
-	z-index: 999;
-}
-
-.button5 {
-	position:absolute;
-	width: 150px;
-	height: 65px;
-	left: 772px;
-	bottom: 0px;
-	opacity: 0;
-	border-radius: 0px 50px 0px 0px;
-	z-index: 999;
-}
-
-.button6 {
-	position:absolute;
-	width: 60px;
-	height: 60px;
-	right: 25px;
-	bottom: 0px;
-	opacity: 1;
-	z-index: 999;
 }
