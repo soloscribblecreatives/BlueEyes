@@ -1,0 +1,23 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.s1_1 {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  z-index: 1;
+}
+
+.s1_2 {
+  position: absolute;
+  left: 64px;
+  top: 186px;
+  width: 896px;
+  height: 185px;
+  animation: backInDown 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  z-index: 2;
+}

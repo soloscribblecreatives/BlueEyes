@@ -1,0 +1,40 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.s1_1 {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  z-index: 1;
+}
+
+.s1_2_wrap {
+  position: absolute;
+  top: 0px;
+}
+
+.s1_2 {
+  position: absolute;
+  left: 130px;
+  top: 111px;
+  width: 705px;
+  height: 217px;
+  animation: fadeInLeft 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  z-index: 5;
+}
+
+.s1_3 {
+  position: absolute;
+  left: 611px;
+  top: 99px;
+  width: 327px;
+  height: 222px;
+  animation: rollIn 0.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+  z-index: 5;
+}

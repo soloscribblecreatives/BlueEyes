@@ -1,0 +1,89 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.s2_1 {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  z-index: 1;
+}
+
+.s2_2_wrap {
+  position: absolute;
+  top: -15px;
+}
+
+.s2_2 {
+  position: absolute;
+  left: 204px;
+  top: 39px;
+  width: 602px;
+  height: 243px;
+  animation: fadeIn 0.3s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+  z-index: 8;
+}
+
+.s2_3 {
+  position: absolute;
+  left: 239px;
+  top: 94px;
+  width: 316px;
+  height: 127px;
+  animation: fadeInLeft 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  z-index: 5;
+}
+
+.s2_4 {
+
+  position: absolute;
+  left: 252px;
+  top: 94px;
+  width: 538px;
+  height: 126px;
+  animation: fadeInRight 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  z-index: 6;
+}
+
+
+@-webkit-keyframes stampIn {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		transform-origin: 50% 50%;
+		transform: rotate(-40deg) scale(3);
+		opacity: 0.5;
+	}
+	100% {
+		transform: rotate(0deg) scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes stampIn {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		transform-origin: 50% 50%;
+		transform: rotate(-30deg) scale(2);
+		opacity: 0.5;
+	}
+	100% {
+		transform: rotate(0deg) scale(1);
+		opacity: 1;
+	}
+}
+
+.stampIn {
+  -webkit-animation-name: stampIn;
+  animation-name: stampIn;
+}
