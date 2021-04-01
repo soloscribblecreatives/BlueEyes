@@ -385,10 +385,10 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1024" height="768"/></div><div class="s1_2"><img src="slide1/s1_2.png"/></div><div class="s1_pop1" onclick="s1_pop1()"></div><div class="s1_c1ose1" onclick="s1_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1024" height="768"/></div><div class="s1_2"><img src="slide1/s1_2.gif"/></div><div class="s1_pop1" onclick="s1_pop1()"></div><div class="s1_c1ose1" onclick="s1_close1()"></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s2_1"><img src="slide2/s2_1.png" width="1024" height="768"/></div><div class="s2_2"><img src="slide2/s2_2.png"/></div><div class="s2_pop1" onclick="s2_pop1()"></div><div class="s2_c1ose1" onclick="s2_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s2_1"><img src="slide2/s2_1.png" width="1024" height="768"/></div><div class="s2_2"><img src="slide2/s2_2.gif"/></div><div class="s2_pop1" onclick="s2_pop1()"></div><div class="s2_c1ose1" onclick="s2_close1()"></div>';
 	break;
 }
 

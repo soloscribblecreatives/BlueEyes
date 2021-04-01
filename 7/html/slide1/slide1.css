@@ -16,7 +16,7 @@
   top: 186px;
   width: 896px;
   height: 185px;
-  animation: backInDown 1s;
+  animation: flipInX 1s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
   z-index: 2;
