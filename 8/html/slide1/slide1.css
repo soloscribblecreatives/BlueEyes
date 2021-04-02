@@ -16,8 +16,8 @@
   top: 61px;
   width: 661px;
   height: 189px;
-  animation: flipInX 1s;
-  animation-delay: 0.5s;
+  animation: flipInX 0.5s;
+  animation-delay: 0.3s;
   animation-fill-mode: both;
   z-index: 2;
 }
