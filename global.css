@@ -107,7 +107,7 @@ html[xmlns] .clearfix {
 }
 .slide_arrow {
 	position: relative;
-	top: 360px;
+	top: 260px;
 	opacity: 1;
 	display: block;
 	z-index: 999;
