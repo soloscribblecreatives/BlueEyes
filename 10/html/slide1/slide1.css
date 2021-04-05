@@ -1,11 +1,10 @@
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 }
 
-.s1_1 {
-  position: absolute;
-  width: 1024px;
-  height: 768px;
-  z-index: 1;
+.background {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
 }

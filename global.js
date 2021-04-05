@@ -198,7 +198,7 @@ if (typeof(localStorage.getItem('currentslide'))!='undefined' && localStorage.ge
 	
  } 
  
-	if(nextSlideNo <= 14){//number 3 is number of total slides present
+	if(nextSlideNo <= 16){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -426,6 +426,12 @@ switch(pg_id){
 	case 14:
 	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="14/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
 	break;
+	case 15:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="15/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 16:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="16/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;	
 }
 
 return content;

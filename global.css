@@ -107,12 +107,12 @@ html[xmlns] .clearfix {
 }
 .slide_arrow {
 	position: relative;
-	top: 260px;
+	top: 360px;
 	opacity: 1;
 	display: block;
 	z-index: 999;
 	visibility: visible;
-	animation: none;
+	animation: flash 3s infinite;
 	animation-delay: 0.5s;
 	animation-fill-mode: both;
 }
