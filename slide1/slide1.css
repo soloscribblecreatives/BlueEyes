@@ -1,0 +1,189 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.s1_1 {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  z-index: 1;
+}
+
+.s1_2 {
+  position: absolute;
+  left: 180px;
+  top: 70px;
+  width: 665px;
+  height: 23px;
+  animation: fadeInDown 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  z-index: 3;
+}
+
+.s1_3_wrap {
+  position: absolute;
+  left: 244px;
+  top: 138px;
+  width: 530px;
+  height: 70px;
+  animation: fadeInUp 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+  z-index: 3;
+}
+
+.s1_3 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 530px;
+  height: 70px;
+  animation: flipOutX 1s;
+  animation-delay: 4.5s;
+  animation-fill-mode: both;
+  z-index: 3;
+}
+
+.s1_4 {
+  position: absolute;
+  left: 80px;
+  top: 322px;
+  width: 863px;
+  height: 303px;
+  animation: bounce 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  z-index: 4;
+}
+
+.s1_5 {
+  position: absolute;
+  left: 322px;
+  top: 117px;
+  width: 379px;
+  height: 176px;
+  animation: flipInX 1s;
+  animation-delay: 5s;
+  animation-fill-mode: both;
+  z-index: 4;
+}
+
+.s1_6_wrap {
+  position: absolute;
+  left: 80px;
+  top: 322px;
+  width: 863px;
+  height: 356px;
+  overflow: hidden;
+  animation: growHeight 1s;
+  animation-delay: 6.5s;
+  animation-fill-mode: both;
+  z-index: 5;
+}
+
+.s1_6 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 863px;
+  height: 356px;
+  animation: none;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  z-index: 5;
+}
+
+@-webkit-keyframes growHeight {
+  0% {
+    height: 0px;
+	opacity: 1;
+  }
+
+  100% {
+    height: 356px;
+	opacity: 1;
+  }
+}
+
+@keyframes growHeight {
+  0% {
+    height: 0px;
+	opacity: 1;
+  }
+
+  100% {
+    height: 356px;
+	opacity: 1;
+  }
+}
+
+.growHeight {
+  -webkit-animation-name: growHeight;
+  animation-name: growHeight;
+}
+
+@-webkit-keyframes growWidth {
+  0% {
+    width: 0px;
+	opacity: 1;
+  }
+
+  100% {
+    width: 311px;
+	opacity: 1;
+  }
+}
+
+@keyframes growWidth {
+  0% {
+    width: 0px;
+	opacity: 1;
+  }
+
+  100% {
+    width: 311px;
+	opacity: 1;
+  }
+}
+
+.growWidth {
+  -webkit-animation-name: growWidth;
+  animation-name: growWidth;
+}
+
+@-webkit-keyframes stampIn {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		transform-origin: 50% 50%;
+		transform: scale(3);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes stampIn {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		transform-origin: 50% 50%;
+		transform: scale(2);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.stampIn {
+  -webkit-animation-name: stampIn;
+  animation-name: stampIn;
+}
