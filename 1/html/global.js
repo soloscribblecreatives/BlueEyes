@@ -198,7 +198,7 @@ if (typeof(localStorage.getItem('currentslide'))!='undefined' && localStorage.ge
 	
  } 
  
-	if(nextSlideNo <= 5){//number 3 is number of total slides present
+	if(nextSlideNo <= 4){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -302,10 +302,10 @@ if(direction == 'b') {
 //custom slide changes ends here....
 
 	else{
-	if(page_id <= 5){
+	if(page_id <= 4){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 6){
+		if(page_id == 5){
             flag=1;
         }
 	}
@@ -385,19 +385,16 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="1/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div><div class="s2"><img src="slide1/2.png"></div><div class="pop_up"><img src="slide1/2.jpg" width="1024" height="768" alt=""></div><div class="pop1" onclick="pop1()"></div><div class="c1ose1" onclick="close1()"></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="2/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div><div class="pop_up"><img src="slide1/2.jpg" width="1024" height="768" alt=""></div><div class="pop1" onclick="pop1()"></div><div class="c1ose1" onclick="close1()"></div>';
 	break;
     case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="3/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div><div class="pop_up"><img src="slide1/2.jpg" width="1024" height="768" alt=""></div><div class="pop1" onclick="pop1()"></div><div class="c1ose1" onclick="close1()"></div>';
 	break;
-	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="4/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="5/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+    case 4:
+	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="background"><img src="slide4/1.jpg" width="1024" height="768" alt=""></div><div class="pop_up"><img src="slide1/2.jpg" width="1024" height="768" alt=""></div><div class="pop1" onclick="pop1()"></div><div class="c1ose1" onclick="close1()"></div>';
 	break;
 }
 
@@ -539,3 +536,17 @@ $(document).ready(function(){
 		$('.touchbtn').css("display","block");
 	})
 })
+
+/*--------------------- animation javascript -----------------------*/
+
+function pop1() {
+	$('.pop_up').css("display","block");
+	$('.pop1').css("display","none");
+	$('.c1ose1').css("display","block");
+}
+
+function close1() {
+	$('.pop_up').css("display","none");
+	$('.pop1').css("display","block");
+	$('.c1ose1').css("display","none");
+}

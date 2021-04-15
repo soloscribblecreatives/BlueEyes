@@ -3,74 +3,65 @@
 	padding: 0px;
 }
 
-.s1_1 {
+.s2_1 {
   position: absolute;
   width: 1024px;
   height: 768px;
   z-index: 1;
 }
 
-.s1_2 {
+.s2_2 {
   position: absolute;
   left: 180px;
   top: 70px;
   width: 665px;
   height: 23px;
-  animation: fadeInDown 1s;
-  animation-delay: 0.5s;
-  animation-fill-mode: both;
   z-index: 3;
 }
 
-.s1_3_wrap {
+.s2_3_wrap {
   position: absolute;
   left: 244px;
   top: 138px;
   width: 530px;
   height: 70px;
-  animation: fadeInUp 1s;
-  animation-delay: 1.5s;
+  animation: flipOutX 1s;
+  animation-delay: 0.5s;
   animation-fill-mode: both;
   z-index: 3;
 }
 
-.s1_3 {
+.s2_3 {
   position: absolute;
   left: 0px;
   top: 0px;
   width: 530px;
   height: 70px;
-  animation: flipOutX 1s;
-  animation-delay: 4.5s;
-  animation-fill-mode: both;
   z-index: 3;
 }
 
-.s1_4 {
+.s2_4 {
   position: absolute;
   left: 80px;
   top: 322px;
   width: 863px;
   height: 303px;
-  animation: bounce 1s;
-  animation-delay: 2.5s;
-  animation-fill-mode: both;
   z-index: 4;
 }
 
-.s1_5 {
+.s2_5 {
   position: absolute;
   left: 322px;
   top: 117px;
   width: 379px;
   height: 176px;
   animation: flipInX 1s;
-  animation-delay: 5s;
+  animation-delay: 1s;
   animation-fill-mode: both;
   z-index: 4;
 }
 
-.s1_6_wrap {
+.s2_6_wrap {
   position: absolute;
   left: 80px;
   top: 322px;
@@ -78,19 +69,19 @@
   height: 356px;
   overflow: hidden;
   animation: growHeight 1s;
-  animation-delay: 6.5s;
+  animation-delay: 3s;
   animation-fill-mode: both;
   z-index: 5;
 }
 
-.s1_6 {
+.s2_6 {
   position: absolute;
   left: 0px;
   top: 0px;
   width: 863px;
   height: 356px;
   animation: none;
-  animation-delay: 2.5s;
+  animation-delay: 2s;
   animation-fill-mode: both;
   z-index: 5;
 }
