@@ -28,7 +28,9 @@
           <div class="slides"><img src="thumbs/02.png" alt=""></div>
           <div class="slides"><img src="thumbs/03.png" alt=""></div> 
           <div class="slides"><img src="thumbs/04.png" alt=""></div> 
-          <div class="slides"><img src="thumbs/05.png" alt=""></div> 
+          <div class="slides"><img src="thumbs/05.png" alt=""></div>
+          <div class="slides"><img src="thumbs/06.png" alt=""></div>
+          <div class="slides"><img src="thumbs/07.png" alt=""></div>
       </div>
     </div>
     <div class="box_btn"></div>
@@ -64,7 +66,7 @@ var selectedContentPath = 'slide1/';
 if (typeof(localStorage.getItem("currentcustomslideflag"))!='undefined' && localStorage.getItem("currentcustomslideflag") =='true'){
 	var custcomslideid = parseInt(localStorage.getItem("currentcontentcustomslideId")) ;
 	
-	switch(custcomslideid){
+switch(custcomslideid){
 	case 1:
 	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="1/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
 	break;
@@ -79,6 +81,13 @@ if (typeof(localStorage.getItem("currentcustomslideflag"))!='undefined' && local
 	break;
 	case 5:
 	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="5/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 6:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="6/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 7:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="6/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
 }
 
 	$("#main_content").html(content);

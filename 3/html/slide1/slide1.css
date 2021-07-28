@@ -12,44 +12,13 @@
 
 .s1_2 {
   position: absolute;
-  left: 51px;
+  left: 270px;
   top: 80px;
-  width: 705px;
-  height: 192px;
+  width: 790px;
+  height: 153px;
+  animation: flipInX 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
   z-index: 2;
 }
 
-@-webkit-keyframes stampIn {
-	0% {
-		opacity: 0;
-	}
-	10% {
-		transform-origin: 50% 50%;
-		transform: rotate(-40deg) scale(3);
-		opacity: 0.5;
-	}
-	100% {
-		transform: rotate(0deg) scale(1);
-		opacity: 1;
-	}
-}
-
-@keyframes stampIn {
-	0% {
-		opacity: 0;
-	}
-	10% {
-		transform-origin: 50% 50%;
-		transform: rotate(-30deg) scale(2);
-		opacity: 0.5;
-	}
-	100% {
-		transform: rotate(0deg) scale(1);
-		opacity: 1;
-	}
-}
-
-.stampIn {
-  -webkit-animation-name: stampIn;
-  animation-name: stampIn;
-}
