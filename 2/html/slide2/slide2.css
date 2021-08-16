@@ -1,23 +1,10 @@
-*{
-  margin: 0px;
-  padding: 0px;
+* {
+	margin: 0px;
+	padding: 0px;
 }
 
-.s2_1 {
-  position: absolute;
-  width: 1024px;
-  height: 768px;
-  z-index: 1;
-}
-
-.s2_2 {
-  position: absolute;
-  left: 270px;
-  top: 70px;
-  width: 741px;
-  height: 158px;
-  animation: flipInX 0.3s;
-  animation-delay: 0.2s;
-  animation-fill-mode: both;
-  z-index: 2;
+.background {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
 }
