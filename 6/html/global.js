@@ -198,7 +198,7 @@ if (typeof(localStorage.getItem('currentslide'))!='undefined' && localStorage.ge
 	
  } 
  
-	if(nextSlideNo <= 4){//number 3 is number of total slides present
+	if(nextSlideNo <= 2){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -302,10 +302,10 @@ if(direction == 'b') {
 //custom slide changes ends here....
 
 	else{
-	if(page_id <= 4){
+	if(page_id <= 2){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 5){
+		if(page_id == 3){
             flag=1;
         }
 	}
@@ -389,12 +389,6 @@ switch(pg_id){
 	break;
 	case 2:
 	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-    case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-    case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="background"><img src="slide4/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 }
 
@@ -536,33 +530,3 @@ $(document).ready(function(){
 		$('.touchbtn').css("display","block");
 	})
 })
-
-/*--------------------- animation javascript -----------------------*/
-
-function s1_pop1() {
-	$('.s1_2').css("display","block");
-	$('.s1_c1ose1').css("display","block");
-}
-
-function s1_pop2() {
-	$('.s1_3').css("display","block");
-	$('.s1_c1ose1').css("display","block");
-}
-
-function s1_pop3() {
-	$('.s1_4').css("display","block");
-	$('.s1_c1ose1').css("display","block");
-}
-
-function s1_pop4() {
-	$('.s1_5').css("display","block");
-	$('.s1_c1ose1').css("display","block");
-}
-
-function s1_close1() {
-	$('.s1_2').css("display","none");
-	$('.s1_3').css("display","none");
-	$('.s1_4').css("display","none");
-	$('.s1_5').css("display","none");
-	$('.s1_c1ose1').css("display","none");
-}

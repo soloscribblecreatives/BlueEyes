@@ -1,0 +1,30 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.background {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.gif1 {
+	position: absolute;
+    left: 48px;
+    top: 506px;
+    width: 400px;
+    height: 226px;
+	z-index: 2;
+}
+
+.gif2 {
+	position: absolute;
+    left: 576px;
+    top: 506px;
+    width: 401px;
+    height: 226px;
+	z-index: 2;
+}
+
