@@ -388,7 +388,7 @@ switch(pg_id){
 	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s2_1"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div><div class="s2_2"><img src="slide2/2.jpg" width="1024" height="768" alt=""/></div><div class="s2_3"><img src="slide2/3.jpg" width="1024" height="768" alt=""/></div><div class="s2_4"><img src="slide2/4.jpg" width="1024" height="768" alt=""/></div><div class="s2_5"><img src="slide2/5.jpg" width="1024" height="768" alt=""/></div><div class="s2_pop1" onclick="s2_pop1()"></div><div class="s2_pop2" onclick="s2_pop2()"></div><div class="s2_pop3" onclick="s2_pop3()"></div><div class="s2_pop4" onclick="s2_pop4()"></div><div class="s2_close1" onclick="s2_close1()"></div>';
 	break;
 }
 
@@ -530,3 +530,44 @@ $(document).ready(function(){
 		$('.touchbtn').css("display","block");
 	})
 })
+
+/*--------------------- animation javascript -----------------------*/
+
+function s2_pop1() {
+	$('.s2_2').css("display","block");
+	$('.s2_pop1').css("display","none");
+	$('.s2_close1').css("display","block");
+}
+
+function s2_pop2() {
+	$('.s2_3').css("display","block");
+	$('.s2_pop2').css("display","none");
+	$('.s2_close1').css("display","block");
+}
+
+function s2_pop3() {
+	$('.s2_4').css("display","block");
+	$('.s2_pop3').css("display","none");
+	$('.s2_close1').css("display","block");
+}
+
+function s2_pop4() {
+	$('.s2_5').css("display","block");
+	$('.s2_pop4').css("display","none");
+	$('.s2_close1').css("display","block");
+}
+
+function s2_close1() {
+	$('.s2_2').css("display","none");
+	$('.s2_pop1').css("display","block");
+	$('.s2_close1').css("display","none");
+	$('.s2_3').css("display","none");
+	$('.s2_pop2').css("display","block");
+	$('.s2_close1').css("display","none");
+	$('.s2_4').css("display","none");
+	$('.s2_pop3').css("display","block");
+	$('.s2_close1').css("display","none");
+	$('.s2_5').css("display","none");
+	$('.s2_pop4').css("display","block");
+	$('.s2_close1').css("display","none");
+}
