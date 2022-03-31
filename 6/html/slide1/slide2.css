@@ -1,0 +1,120 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.background {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	animation-fill-mode: both;
+	z-index: 1;
+}
+
+.background1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	animation: fadeOut;
+	animation-duration: 1s;
+	animation-delay: 1.5s;
+	animation-fill-mode: both;
+	z-index: 8;
+}
+
+.background2 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	animation: fadeOut;
+	animation-duration: 1s;
+	animation-delay: 3s;
+	animation-fill-mode: both;
+	z-index: 7;
+}
+
+.background3 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	animation: fadeOut;
+	animation-duration: 1s;
+	animation-delay: 4.5s;
+	animation-fill-mode: both;
+	z-index: 6;
+}
+
+.background4 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	animation: fadeOut;
+	animation-duration: 1s;
+	animation-delay: 6s;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.background5 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	animation: fadeOut;
+	animation-duration: 1s;
+	animation-delay: 7.5s;
+	animation-fill-mode: both;
+	z-index: 4;
+}
+
+.background6 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	animation: fadeOut;
+	animation-duration: 1s;
+	animation-delay: 9s;
+	animation-fill-mode: both;
+	z-index: 3;
+}
+
+.background7 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 2;
+}
+
+.logo {
+  position: absolute;
+  left: 93px;
+  top: 34px;
+  width: 511px;
+  height: 297px;
+  z-index: 4;
+}
+
+
+.popup {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 7;
+	display: none;
+}
+
+.pop_open {
+	position: absolute;
+	width: 120px;
+	height: 100px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 5;
+}
+
+.pop_close {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 10;
+	display: none;
+}
