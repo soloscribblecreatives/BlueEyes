@@ -5,7 +5,7 @@
 <meta http-equiv="cache-control" content="max-age=200"/>
 <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
 <meta http-equiv="X-UA-Compatible" content="chrome=1">
-<title>Endeavour</title>
+<title>Beeplex</title>
 <link rel="stylesheet" type="text/css" href="animate.css" media="screen"/>
 <link rel="stylesheet" type="text/css" href="global.css" media="screen"/>
 
@@ -16,52 +16,38 @@
 
 <body>
 <div id="wrapper" rel="1">
+  <div class="menu"> <img src="menu.png" width="37" alt=""> </div>
   <div class="slide_arrow">
-    <div class="left_arrow" ><img src="left_arrow.png" alt="previous icon" width="60" height="60" ></div>
-    <div class="right_arrow" ><img src="right_arrow.png" alt="next icon" width="60" height="60"></div>
+    <div class="left_arrow" ><img src="left_arrow.png" alt="previous icon" width="30" height="30" ></div>
+    <div class="right_arrow" ><img src="right_arrow.png" alt="next icon" width="30" height="30"></div>
   </div>
   <div id="main_content"></div>
   <div class="reference active">
     <div class="box">
       <div class="slide_jumper">
-		  <div class="slides"><img src="thumbs/01.png" alt=""></div>
-          <div class="slides"><img src="thumbs/02.png" alt=""></div>
-          <div class="slides"><img src="thumbs/03.png" alt=""></div> 
-          <div class="slides"><img src="thumbs/04.png" alt=""></div> 
-          <div class="slides"><img src="thumbs/05.png" alt=""></div>
-          <div class="slides"><img src="thumbs/06.png" alt=""></div>
-          <div class="slides"><img src="thumbs/07.png" alt=""></div>
-          <div class="slides"><img src="thumbs/08.png" alt=""></div>
-          <div class="slides"><img src="thumbs/09.png" alt=""></div>
-          <div class="slides"><img src="thumbs/10.png" alt=""></div>
-          <div class="slides"><img src="thumbs/11.png" alt=""></div>
-          <div class="slides"><img src="thumbs/12.png" alt=""></div>
-          <div class="slides"><img src="thumbs/13.png" alt=""></div>
-          <div class="slides"><img src="thumbs/14.png" alt=""></div>
-          <div class="slides"><img src="thumbs/15.png" alt=""></div>
-          <div class="slides"><img src="thumbs/16.png" alt=""></div>
-          <div class="slides"><img src="thumbs/17.png" alt=""></div>
-          <div class="slides"><img src="thumbs/18.png" alt=""></div>
+		  <div class="slides"><img src="thumbs/01.png" alt=""></div>      
       </div>
     </div>
     <div class="box_btn"></div>
   </div>
 </div>
 <div id="myconsole"></div>
-<div id="click_through" > </div>
+<div id="click_through"></div>
+
 <script src="global.js" type="text/javascript" language="javascript"></script> 
+
 <script>
 var startTime = Date.now();
 //step 1:
 var temp = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_1");
 	
 	if(temp == null){			
-			localStorage.setItem(currentContentId+"_"+contentName+"_slideNo_1" ,startTime);
-			localStorage.setItem(currentContentId+"_"+contentName+"_totalTime_slideNo_1",0);
-			//to capture start time of 1st slide in db format
-			var startTime1InDBFormat = currentTimeInDatabaseFormat();
-			//alert(startTime1InDBFormat);
-			localStorage.setItem(currentContentId+"_"+contentName+"_StartTime_1" ,startTime1InDBFormat);	
+		localStorage.setItem(currentContentId+"_"+contentName+"_slideNo_1" ,startTime);
+		localStorage.setItem(currentContentId+"_"+contentName+"_totalTime_slideNo_1",0);
+		//to capture start time of 1st slide in db format
+		var startTime1InDBFormat = currentTimeInDatabaseFormat();
+		//alert(startTime1InDBFormat);
+		localStorage.setItem(currentContentId+"_"+contentName+"_StartTime_1" ,startTime1InDBFormat);	
 	}
 //step 1 ends here..
 
@@ -77,62 +63,34 @@ var selectedContentPath = 'slide1/';
 if (typeof(localStorage.getItem("currentcustomslideflag"))!='undefined' && localStorage.getItem("currentcustomslideflag") =='true'){
 	var custcomslideid = parseInt(localStorage.getItem("currentcontentcustomslideId")) ;
 	
-switch(custcomslideid){
-	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="1/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="2/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-    case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="3/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="4/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="5/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 6:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="6/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 7:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="7/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 8:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="8/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 9:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="9/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 10:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="10/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 11:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="11/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 12:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="12/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 13:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="13/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 14:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="14/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 15:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="15/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 16:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="16/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 17:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="17/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 18:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="18/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-}
+	switch(custcomslideid){
+		case 1:
+		content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><section class="slide1"><div class="slide1bg"><div class="wall_break"><img id="wall_break" src="slide1/3.png" style="width:539px; height:448px"></div><div class="break_limit"><img src="slide1/4_2.png" style="width:494px; height:195px"></div><div class="wreck_wrap"><div class="wreck_ride"><img src="slide1/5.png" style="width:194px; height:449px"></div><div class="wreck_ball"><img src="slide1/6.png" style="width:179px; height:476px"></div></div></div><audio id="explod"><source src="Explode.mp3" type="audio/mp3" /></audio><audio id="engine"><source src="Engine.mp3" type="audio/mp3" /></audio></section>';
+		
+		var $target = $("#wall_break");
+		function explode() {
+		$target.explodeRestore();
+		setTimeout(function () {
+        $target.explode({
+            maxWidth: 40,
+            minWidth: 5,
+            radius: 500,
+            release: false,
+            recycle: false,
+            explodeTime: 200,
+            canvas: true,
+            round: false,
+            maxAngle: 360,
+            gravity: 5,
+            groundDistance: 270,
+        });
+		}, 3300)
+		}
+		explode();
+		setTimeout(function(){ engine.play(); }, 800);
+		setTimeout(function(){ explod.play(); explod.volume = 0.5; }, 2800);
+		break;
+	}
 
 	$("#main_content").html(content);
 	  localStorage.setItem("gotoNextPrevBrand" ,1);//if one than next if 2 than prev
@@ -141,7 +99,30 @@ switch(custcomslideid){
 	 
 }else{
 
-$("#main_content").html('<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="1/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>');
+$("#main_content").html('<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><section class="slide1"><div class="slide1bg"><div class="wall_break"><img id="wall_break" src="slide1/3.jpg" style="width:1024px; height:768px;"></div><div class="pack_text"><img src="slide1/4_1.png"></div><div class="pack_shot"><img src="slide1/4_2.png"></div><div class="house"><img src="slide1/5.png"></div><div class="curtain1"><img src="slide1/6.png"></div><div class="curtain2"><img src="slide1/7.png"></div><audio id="explod"><source src="Explode.mp3" type="audio/mp3" /></audio><audio id="engine"><source src="Engine.mp3" type="audio/mp3"/></audio></div></section>');
+
+var $target = $("#wall_break");
+function explode() {
+    $target.explodeRestore();
+    setTimeout(function () {
+        $target.explode({
+            maxWidth: 20,
+            minWidth: 5,
+            radius: 3500,
+            release: false,
+            recycle: false,
+            explodeTime: 2000,
+            canvas: true,
+            round: true,
+            maxAngle: 360,
+            gravity: 0.1,
+            groundDistance: 990,
+        });
+    }, 2500)
+}
+explode();
+setTimeout(function(){ engine.play(); }, 800);
+setTimeout(function(){ explod.play(); explod.volume = 0.5; }, 2800);
 }
 });
 </script> 
