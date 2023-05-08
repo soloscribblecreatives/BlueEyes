@@ -478,6 +478,19 @@
   z-index: 12;
 }
 
+.s1_27_shadow {
+  position: absolute;
+  left: 60px;
+  top: 389px;
+  width: 904px;
+  height: 208px;
+  animation: fadeInUp 0.5s;
+  animation-delay: 4.8s;
+  animation-fill-mode: both;
+  display: none;
+  z-index: 14;
+}
+
 .s1_27 {
   position: absolute;
   left: 60px;
@@ -488,7 +501,7 @@
   animation-delay: 4.8s;
   animation-fill-mode: both;
   display: none;
-  z-index: 12;
+  z-index: 15;
 }
 
 
