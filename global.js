@@ -347,7 +347,7 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1024" height="768" alt=""/></div><div class="s1_2_wrap"><div class="s1_2"><img src="slide1/s1_2.png"/></div></div><div class="s1_3"><img src="slide1/s1_3.png"/></div><div class="s1_4"><img src="slide1/s1_4.png"/></div><div class="s1_5"><img src="slide1/s1_5.png"/></div><div class="s1_6"><img src="slide1/s1_6.png"/></div><div class="strike1" onclick="strike1();"></div><div class="s1_7"><img src="slide1/s1_7.png"/></div><div class="s1_8"><img src="slide1/s1_8.png"/></div><div class="s1_9_wrap"><div class="s1_9"><img src="slide1/s1_9.png"/></div></div><div class="s1_10"><img src="slide1/s1_10.png"/></div><div class="s1_11"><img src="slide1/s1_11.png"/></div><div class="strike2" onclick="strike2();"></div><div class="s1_12"><img src="slide1/s1_12.png"/></div><div class="s1_13"><img src="slide1/s1_13.png"/></div><div class="s1_14"><img src="slide1/s1_14.png"/></div><div class="s1_15"><img src="slide1/s1_15.png"/></div><div class="s1_16"><img src="slide1/s1_16.png"/></div><div class="s1_17"><img src="slide1/s1_17.png"/></div><div class="strike3" onclick="strike3();"></div><div class="s1_18_wrap"><div class="s1_18"><img src="slide1/s1_18.png"/></div></div><div class="s1_19"><img src="slide1/s1_19.png"/></div><div class="s1_20"><img src="slide1/s1_20.png"/></div><div class="s1_21"><img src="slide1/s1_21.png"/></div><div class="s1_22"><img src="slide1/s1_22.png"/></div><div class="s1_23"><img src="slide1/s1_23.png"/></div><div class="s1_24"><img src="slide1/s1_24.png"/></div><div class="s1_25"><img src="slide1/s1_25.png"/></div><div class="s1_26"><img src="slide1/s1_26.png"/></div><div class="s1_27"><img src="slide1/s1_27.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1024" height="768" alt=""/></div><div class="s1_2_wrap"><div class="s1_2"><img src="slide1/s1_2.png"/></div></div><div class="s1_3"><img src="slide1/s1_3.png"/></div><div class="s1_3_1_wrap"><div class="s1_3_1"><img src="slide1/s1_3_1.png"/></div></div><div class="s1_4"><img src="slide1/s1_4.png"/></div><div class="s1_5"><img src="slide1/s1_5.png"/></div><div class="s1_6"><img src="slide1/s1_6.png"/></div><div class="strike1" onclick="strike1();"></div><div class="s1_7"><img src="slide1/s1_7.png"/></div><div class="s1_8"><img src="slide1/s1_8.png"/></div><div class="s1_9_wrap"><div class="s1_9"><img src="slide1/s1_9.png"/></div></div><div class="s1_10"><img src="slide1/s1_10.png"/></div><div class="s1_11"><img src="slide1/s1_11.png"/></div><div class="strike2" onclick="strike2();"></div><div class="s1_12"><img src="slide1/s1_12.png"/></div><div class="s1_13"><img src="slide1/s1_13.png"/></div><div class="s1_14"><img src="slide1/s1_14.png"/></div><div class="s1_15"><img src="slide1/s1_15.png"/></div><div class="s1_16"><img src="slide1/s1_16.png"/></div><div class="s1_17"><img src="slide1/s1_17.png"/></div><div class="strike3" onclick="strike3();"></div><div class="s1_18_wrap"><div class="s1_18"><img src="slide1/s1_18.png"/></div></div><div class="s1_19"><img src="slide1/s1_19.png"/></div><div class="s1_20"><img src="slide1/s1_20.png"/></div><div class="s1_21"><img src="slide1/s1_21.png"/></div><div class="s1_22"><img src="slide1/s1_22.png"/></div><div class="s1_23"><img src="slide1/s1_23.png"/></div><div class="s1_24"><img src="slide1/s1_24.png"/></div><div class="s1_25"><img src="slide1/s1_25.png"/></div><div class="s1_26"><img src="slide1/s1_26.png"/></div><div class="s1_27"><img src="slide1/s1_27.png"/></div><audio id="theme" src="slide1/theme.mp3" autoplay loop></audio><audio id="draw-sword" src="slide1/draw-sword.mp3"></audio><audio id="gun-shots" src="slide1/gun-shots.mp3"></audio><audio id="glador-logo" src="slide1/glador-logo.mp3"></audio>';
 	break;
 
 }
@@ -492,9 +492,13 @@ $(document).ready(function(){
 
 
 
+/*---------------Javascript Gamification------------------*/
+
 
 function strike1() {
+	document.getElementById("draw-sword").play();
 	$('.s1_3').addClass("s1_3_out");
+	$('.s1_3_1_wrap').addClass("s1_3_1_out");
 	$('.s1_4').addClass("s1_4_out");
 	$('.s1_5, .s1_6').addClass("s1_5_out");
 	$('.s1_7').css("display","block");
@@ -508,6 +512,7 @@ function strike1() {
 }
 
 function strike2() {
+	document.getElementById("draw-sword").play();
 	$('.s1_8').addClass("s1_8_out");
 	$('.s1_9_wrap, .s1_9').addClass("s1_9_out");
 	$('.s1_10, .s1_11').addClass("s1_10_out");
@@ -523,6 +528,12 @@ function strike2() {
 }
 
 function strike3() {
+	document.getElementById("draw-sword").play();
+	setTimeout(function(){
+		var vid = document.getElementById("gun-shots");
+		vid.play();
+		vid.currentTime = 3.7;
+	}, 1000);
 	$('.s1_18_wrap').addClass("s1_18_shift");
 	$('.s1_19').css("display","block");
 	setTimeout(function(){
@@ -548,4 +559,8 @@ function strike3() {
 	$('.s1_25').css("display","block");
 	$('.s1_26').css("display","block");
 	$('.s1_27').css("display","block");
+	setTimeout(function(){
+		var vid = document.getElementById("glador-logo");
+		vid.play();
+	}, 4500);
 }
