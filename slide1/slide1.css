@@ -16,7 +16,7 @@
   top: 298px;
   width: 573px;
   height: 171px;
-  animation: fadeOutUp 0.5s;
+  animation: fadeOutUp 0.3s;
   animation-delay: 2s;
   animation-fill-mode: both;
   z-index: 2;
@@ -47,7 +47,7 @@
 }
 
 .s1_3_out {
-  animation: fadeOutUp 1s;
+  animation: fadeOutUp 0.3s;
   animation-delay: 0s;
   animation-fill-mode: both;
 }
@@ -78,7 +78,7 @@
 }
 
 .s1_3_1_out {
-  animation: zoomOut 1s;
+  animation: zoomOut 0.3s;
   animation-delay: 0s;
   animation-fill-mode: both;
 }
@@ -97,7 +97,7 @@
 }
 
 .s1_4_out {
-  animation: fadeOutLeft 1s;
+  animation: fadeOutLeft 0.3s;
   animation-delay: 0s;
   animation-fill-mode: both;
 }
@@ -137,7 +137,7 @@
 }
 
 .s1_5_out {
-  animation: fadeOutRight 1s;
+  animation: fadeOutRight 0.3s;
   animation-delay: 0s;
   animation-fill-mode: both;
 }
@@ -158,7 +158,7 @@
   position: absolute;
   width: 1024px;
   height: 768px;
-  animation: fadeIn 2s;
+  animation: fadeIn 1s;
   animation-delay: 0s;
   animation-fill-mode: both;
   display: none;
@@ -220,8 +220,8 @@
 .s1_10 {
   position: absolute;
   left: 118px;
-  top: 412px;
-  width: 728px;
+  top: 407px;
+  width: 725px;
   height: 52px;
   animation: fadeInRight 0.5s;
   animation-delay: 4.2s;
@@ -232,8 +232,8 @@
 
 .s1_11 {
   position: absolute;
-  left: 759px;
-  top: 418px;
+  left: 753px;
+  top: 413px;
   width: 78px;
   height: 41px;
   animation: revealHorizontalSmall 1s infinite;
@@ -245,7 +245,7 @@
 }
 
 .s1_10_out {
-  animation: fadeOutRight 0.2s;
+  animation: fadeOutRight 0.3s;
   animation-delay: 0s;
   animation-fill-mode: both;
 }
@@ -267,10 +267,9 @@
   position: absolute;
   width: 1024px;
   height: 768px;
-  animation: revealFull 0.2s;
+  animation: fadeIn 1s;
   animation-delay: 2s;
   animation-fill-mode: both;
-  clip: rect(768px,0px,0px,1024px);
   display: none;
   z-index: 3;
 }
