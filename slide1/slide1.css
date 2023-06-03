@@ -379,7 +379,7 @@
 }
 
 .s1_18_shift {
-  animation: swordShift 0.5s;
+  animation: swordShift 0.3s;
   animation-delay: 0s;
   animation-fill-mode: both;
   z-index: 4;
@@ -488,12 +488,12 @@
   z-index: 12;
 }
 
-.s1_27_shadow {
+.s1_27 {
   position: absolute;
-  left: 60px;
-  top: 389px;
-  width: 904px;
-  height: 208px;
+  left: 106px;
+  top: 271px;
+  width: 635px;
+  height: 140px;
   animation: fadeInUp 0.5s;
   animation-delay: 4.8s;
   animation-fill-mode: both;
@@ -501,19 +501,31 @@
   z-index: 14;
 }
 
-.s1_27 {
+.s1_28 {
   position: absolute;
-  left: 60px;
-  top: 389px;
-  width: 904px;
-  height: 208px;
+  left: 106px;
+  top: 433px;
+  width: 731px;
+  height: 139px;
   animation: fadeInUp 0.5s;
-  animation-delay: 4.8s;
+  animation-delay: 5s;
   animation-fill-mode: both;
   display: none;
   z-index: 15;
 }
 
+.s1_29 {
+  position: absolute;
+  left: 106px;
+  top: 598px;
+  width: 763px;
+  height: 140px;
+  animation: fadeInUp 0.5s;
+  animation-delay: 5.2s;
+  animation-fill-mode: both;
+  display: none;
+  z-index: 15;
+}
 
 @keyframes revealFull {
   0% {
